@@ -1,4 +1,5 @@
-//EJERCICIO FÁCIL N°14//
+//EJERCICIO FÁCIL N°14 Dado un arreglo de 10 números, retornar un nuevo arreglo solo con los números pares.
+//
 
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
         var isEven = [];
@@ -16,7 +17,8 @@ var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 //______________________________________________________________________________________
 
-//EJERCICIO FACIL N°15//
+//EJERCICIO FACIL N°15 Dado un arreglo de 4 números positivos, devolver un nuevo arreglo con cada elemento multiplicado por 12.
+//
 
 var positiveNumbers = [4,8,12]; // Números a multiplicar//
     var resultNumbers = []; //contenedor donde irán números multiplicados//
@@ -28,7 +30,9 @@ alert(resultNumbers);
 
 //_______________________________________________________________________________________
 
-//EJERCICIO FACIL N°11//
+//EJERCICIO FACIL N°11 Diseñar un programa que lea las calificaciones de un alumno (10 notas en total). 
+//y se aprueba con un promedio igual o mayor a 4 //
+
 
 function promedio (Notas) {
   var sumar = 0; //contenedor de sumas//
@@ -47,11 +51,13 @@ function promedio (Notas) {
 promedio ([4,7,6,5,4,7,6,7,5,3]);
 //_______________________________________________________________________________________
 
-//EJERCICIO FACIL N° 12//
+//EJERCICIO FACIL N° 12 Realizar un programa que permita analizar si una palabra que el usuario introduce por teclado es palíndroma o no.
+//Si es palíndroma debe retornar true, en caso contrario false.//
+
 var palabra = prompt("Ingresa una palabra para verificar si es palindromo");
 function esPalindromo( palabra ){
-    a = palabra.length;  
-
+    a = palabra.length;  //si el string esta vacio no es palindromo//
+//hace que todas las letras sean 1 o 0 , si todas las letras son 0 es palindromo, si no es falso//
     if(a == 0){
         return false;
 
@@ -78,15 +84,23 @@ var array = [3,6,9,13,45,78];
     array.indexOf(3); // da 0 que es la posición del numero 3//
 
 
-//EJERCICIO MEDIO N° 
+//EJERCICIO MEDIO N10°//
+//Un grupos de amigos van a un evento y sus nombres están dentro de un arreglo. 
+//Escribir una función donde dado el nombre de la persona puedas retornar el asiento que le toca. La numeración comienza en 1, si la persona no tiene asiento retornar 0.
 
-var invitados = [
-  { name: 'Elena', asiento: 10 },
-  { name: 'Nicolás', asiento: 11 },
-  { name: 'Massiel', asiento: 13 },
-  { name: 'Sofia', asiento: 15 },
-  { name: 'Luna',asiento:16 },
-  { name: 'Diego', asiento:17 }
+
+vvar lista=["kote","luna","manuel","diego","romina"]; 
+
+function seatNumber(arr,name){ //
+if(arr.indexOf(name)!==-1){ 
+  
+  return arr.indexOf(name)+1; 
+   
+   }else{ 
+   }
+ }
+  
+console.log(seatNumber(lista,"diego"));
 ];
 
 
